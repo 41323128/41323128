@@ -2,8 +2,14 @@
 <p><span style="color: #000080;">第四組<a href="https://github.com/41323104mia/cad2025_team"></a></span></p>
 <p><span style="color: #000080;"><span>課程名稱: 電腦輔助設計與實習</span></span></p>
 <p><span color="#000080" style="color: #000000;">倉儲: <a href="https://github.com/mdecad2025/2a-ag1">https://github.com/mdecad2025/2a-ag1</a></span></p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 <p><span color="#000080" style="color: #000000;">網站: <a href="https://41323104mia.github.io/cad2025_team/content/index.html"> 41323104mia.github.io/cad2025_team/content/index.htm</a></span></p>
 <p>成員:黃英綺(組長)41323104、徐睿駿41323128、朱宥靜、徐韻涵、許智怡 41323103、蘇郁涵 41323105</p>
+=======
+<p></p>
+<p><span color="#000080" style="color: #000000;">網站: <a href="https://mdecad2025.github.io/2a-ag1/content/index.html">https://mdecad2025.github.io/2a-ag1/content/index.html</a></span></p>
+<p>成員:黃英綺(組長)41323104、徐睿駿41323128、朱宥靜、徐韻涵、許智怡 41323103、蘇郁涵</p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main
 <p></p>
 <p>工作分配:</p>
 <p style="padding-left: 60px;"><span>繪製Openduck mini 的零件設計圖、紀錄工作內容在網站裡:朱宥靜、徐韻涵、蘇郁涵</span></p>
@@ -21,7 +27,8 @@
 <p style="padding-left: 60px;">w17: 如何實作一套 <a href="https://youtu.be/iOLFP90DneY">5-bar Linkage Plotter</a> 與 <a href="https://mde.tw/cad2025/content/OpenDuck.html">Openduck mini</a>？(<a href="https://la.disneyresearch.com/publication/design-and-control-of-a-bipedal-robotic-character/">Disney Bipedal Robot</a>)</p>
 <p style="padding-left: 60px;">w18: 課程總結</p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff00;">個人與分組網站維護 (40%)</span> - 每週至少兩次推送與課程進度相關的學習內容與心得。</p>
-<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p><h1>Report</h1>
+<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p>
+<h1>Report</h1>
 <h2>W3</h2>
 <p>1.用什麼套件完成 5-bar Linkage Plotter 與 Openduck  mini 零組件設計繪圖？ </p>
 <p>5-bar Linkage Plotter :使用<span style="color: #333399;">SolveSpace</span></p>
@@ -54,9 +61,11 @@
 <li data-end="1366" data-start="1323">
 <p data-end="1366" data-start="1325"><span style="color: #333399;">如果需要協作設計，並且偏好雲端解決方案，<strong data-end="1356" data-start="1345">Onshape</strong> 是非常適合的工具。</span></p>
 </li>
-</ul><h2>W7</h2>
+</ul>
+<h2>W7</h2>
 <p>本週報告採Youtube影片簡報</p>
-<p><a href="https://youtu.be/iOLFP90DneY">5-bar Linkage Plotter</a><span><span> </span>與<span> </span></span><a href="https://mde.tw/cad2025/content/OpenDuck.html">Openduck mini</a><span> 零組件設計繪製完成之後，如何切割零件? 為何要切割零件？ 如何利用<span> </span></span><a href="https://cyberbotics.com/">Webots</a><span><span> </span>進行後續的控制系統設計與動態模擬 (Dynamic Simulation)？</span></p><h2>W10</h2>
+<p><a href="https://youtu.be/iOLFP90DneY">5-bar Linkage Plotter</a><span><span> </span>與<span> </span></span><a href="https://mde.tw/cad2025/content/OpenDuck.html">Openduck mini</a><span> 零組件設計繪製完成之後，如何切割零件? 為何要切割零件？ 如何利用<span> </span></span><a href="https://cyberbotics.com/">Webots</a><span><span> </span>進行後續的控制系統設計與動態模擬 (Dynamic Simulation)？</span></p>
+<h2>W10</h2>
 <h2>W14</h2>
 <h2>W17</h2>
 <h2>W18</h2>
@@ -72,11 +81,36 @@
 <p>最小尺寸設計如下<span>:</span></p>
 <p><span><span><span>【基因演算法最終最小化尺寸設計結果】<br/> 找到**滿足約束且最小化尺寸**的設計（總尺寸 J ≈ 54.00 cm）:<br/> L1 (Link 1 &amp; 4) = 19.50cm<br/> L2 (Link 2 &amp; 3) = 25.50 cm<br/> Distance (Y-bottom) = 18 cm<br/> <br/> --- 最終設計驗證 ---<br/><span>1. 最遠點奇異點約束 (L1+L2 &gt; D_max): 45 &gt; 42.94(滿足)</span><br/><span>2. 繪圖區域穩定性 (2*L2 &gt; Max(D_BD) + 1.0cm):</span><br/><span>   2*L2 = 51.00 cm</span><br/><span>   Max(D_BD) + 1.0 cm = 49.79+ 1.00 = 50.79 cm</span><br/><span>   **裕度滿足 (2*L2 僅略大於所需值，實現最小化)**</span><br/><span>3. Y 座標約束 (Y_B, Y_D &gt;= 0): 在逆運動學中已確保 (滿足)</span></span></span></span></p>
 <h2>CAD</h2>
+<p><strong><a href="/downloads/五連桿草稿(線稿).png">五連桿草稿(線稿)</a></strong></p>
+<p><span><img alt="" height="194" src="/images/五連桿草稿(線稿).png" width="399"/></span></p>
+<hr/>
+<p><strong>零件：</strong></p>
+<p>桿件一(19.5cm)</p>
+<p><span><img alt="" height="197" src="/images/桿件一(19.5cm).png" width="405"/></span></p>
+<p><span>桿件二<span>(25.5cm)</span></span></p>
+<p><span><img alt="" height="196" src="/images/桿件二(25.5cm).png" width="403"/></span></p>
+<p>馬達</p>
+<p><span><img alt="" height="196" src="/images/馬達.png" width="403"/></span></p>
+<hr/>
+<p><strong><a href="/downloads/組合圖.png">組合圖</a></strong></p>
+<p><strong><img alt="" height="197" src="/images/組合圖.png" width="405"/></strong></p>
+<p><a href="/downloads/組合圖3.zip">完整檔案</a></p>
 <h2>QA1</h2>
 <h2>Idea</h2>
 <h1>Robot</h1>
 <h2>CAD diary</h2>
-<h3>shyu</h3>
+<h3>41323102徐韻涵</h3>
+<p>機器人網址:</p>
+<p><a href="https://cad.onshape.com/documents/c96c3a1e0e7002e5ad23aa74/w/dfe93b79ce2e775674be9cee/e/abb95eb853704fd508fa71a9">https://cad.onshape.com/documents/c96c3a1e0e7002e5ad23aa74/w/dfe93b79ce2e775674be9cee/e/abb95eb853704fd508fa71a9</a></p>
+<p>機器人視圖:</p>
+<p><img alt="" height="240" src="/images/螢幕擷取畫面 2025-11-28 150829.png" width="181"/><img alt="" height="238" src="/images/螢幕擷取畫面 2025-11-28 150916.png" width="206"/></p>
+<p><a href="/downloads/機器人.zip">/downloads/機器人.zip</a></p>
+<p><a href="/downloads/機器人stl.zip">/downloads/機器人stl.zip</a></p>
+<p> 心得:第一次畫圖不是用inventor或是SOLIDWORKS這這比較常規的軟體，而是用onshap可以多人同時線上編輯的畫圖軟體。第一張圖片不是用 Inventor 或 SOLIDWORKS 畫的，而是用 Onshape。 Onshape可以讓我們機器人隊同時在線上編輯，同步看到彼此的修改，而且不用安裝軟體，對整個團隊協作非常方便。</p>
+<p data-end="1048" data-start="943">  在這個模型裡，每位隊員都有分工，我負責的是把所有零件組裝成完整的機器人。在組裝的過程中，要調整零件方向、設定關節運動，還要處理配合面不對或機構干涉的問題。雖然有點複雜，但看到機器人逐步成形的時候真的很有成就感。</p>
+<p><span>onshap</span>優點<br/>不用安裝 雲端就可以使用<br/>自動儲存<br/>可以多人共同編輯<br/><span>onshap</span>缺點<br/>零件多一點 就會卡住<br/>介面設計不好<br/>功能很少</p>
+<p><span>SOLIDWORKS</span>優點<br/>跟inventor相似度高<br/>可以零件分析模擬（流體、應力）<br/>業界很多公司用</p>
+<p><span>SOLIDWORKS</span>缺點<br/>檔案容易壞掉、路徑容易出錯<br/>沒辦法同時線上編輯<br/>只能在 Windows 上使用</p>
 <h3>su</h3>
 <p>(41323105)</p>
 <p><img alt="" height="174" src="/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-11-28%20145115.png" width="142"/><img alt="" height="171" src="/images/螢幕擷取畫面 2025-12-12 154125.png" width="130"/></p>
@@ -93,13 +127,106 @@
 <p><span><img alt="" height="130" src="/images/螢幕擷取畫面 2025-12-12 145902.png" width="219"/></span></p>
 <p><span> </span></p>
 <p><span></span></p>
-<p><span></span></p><h3>zyj</h3>
-<h2>QA</h2>
-=======
+<p><span></span></p>
 <h3>zyj</h3>
 <h2>QA2</h2>
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main
-<h2>Idea</h2>
+<h2>Idea2</h2>
 <h1>Webot</h1>
 <h2>Diary</h2>
 <h2>QA3</h2>
+<h1>心得</h1>
+<h2>黃英綺</h2>
+<p><span style="color: #33cccc;"><strong>w1</strong></span></p>
+<p>9/12</p>
+<p>下載檔案的密碼：kmolab </p>
+<p>下載了兩個檔案</p>
+<p>課堂大綱：畫機器人+模擬</p>
+<p>w5、w7、w11放假</p>
+<p>w3、w7、w10、w14、w17、w18報告</p>
+<p>w9、w18自評</p>
+<p>每週2次紀錄上課心得和內容</p>
+<p>用nx2312</p>
+<p>更改了可攜程式碼</p>
+<p>在可攜輸入solvespace 可畫圖</p>
+<p>還要下載plotter為開頭的兩個檔案</p>
+<p><span style="color: #33cccc;"><strong>w2</strong></span></p>
+<p>9/19</p>
+<p>登入了onshape (但不是教育版的）是用自己的mail</p>
+<p>練習畫機器人的馬達</p>
+<p>在近端打ugraf -nx可以打開nx（資料夾內的）</p>
+<p><span style="color: #33cccc;"><strong>w3</strong></span></p>
+<p>9/25</p>
+<p>分組</p>
+<p>自己設計</p>
+<p>繪圖範圍200*200 mm</p>
+<p>五連桿</p>
+<p>要架設自己的網站 利用github</p>
+<p><img alt="cry" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-cry.gif"/>遇到問題：</p>
+<p>照著gpt 的方法也沒有成功讓其他分支git上去QAQ</p>
+<p>如何解決衝突</p>
+<p>新增了code在檔案裡不知是否正確</p>
+<p><span style="color: #33cccc;"><strong>w4</strong></span></p>
+<p>10/3</p>
+<p>連接了ipv6</p>
+<p>刪掉了我的倉儲新增的子模組，<wbr/>因為老師的網站不沒有子模組的應用。</p>
+<p>建立了以學號為session的ssh (私鑰在date裡</p>
+<p>以及git clone了團隊作業網站在自己的近端</p>
+<p><img alt="cry" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-cry.gif"/>問題：</p>
+<p>還不了解如何開分支來編輯網站</p>
+<p><span style="color: #33cccc;"><strong>w5</strong></span></p>
+<p>10/10</p>
+<p>雙十節沒有上課</p>
+<p><span style="color: #33cccc;"><strong>w6</strong></span></p>
+<p>10/17</p>
+<p>老師重點在demo的網站裡</p>
+<p>要研究連桿</p>
+<p>設定新ipv6在network_setup檔案夾裡（<wbr/>但proxy沒有被一起設定）</p>
+<p>報告</p>
+<p><span style="color: #33cccc;"><strong>w7</strong></span></p>
+<p>10/24</p>
+<p>光復節補假</p>
+<p><span style="color: #33cccc;"><strong>w8</strong></span></p>
+<p>10/31</p>
+<p>重新創了一個新的ssh ，session的名稱是4</p>
+<p>重新git clone了一次在資料夾04，還創了一個新的分支04</p>
+<div class="gs">
+<div class="">
+<div class="ii gt" id=":ol" jslog="20277; u014N:xr6bB; 1:WyIjdGhyZWFkLWE6ci0yMDk5Mjc1NzgzOTQ3MjcyNDciXQ..; 4:WyIjbXNnLWE6ci0zMTgxNzU4MTI1NDQwMTQ4NDA5IixudWxsLG51bGwsbnVsbCwxLDAsWzEsMCwwXSw5MiwxMDMzLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDAsMF0.">
+<div class="a3s aiL" id=":ok">
+<div id="avWBGd-24">
+<div>
+<div>
+<p><span style="color: #33cccc;"><strong>w9</strong></span></p>
+<p>11/7</p>
+<p>得知了不要在近端合併，在遠端的github使用Pull requests把自己的分支合併到main比較好，</p>
+<p>教會了隊友切分支和把東西編輯完之後git push到自己的分支裡。</p>
+<p><span style="color: #33cccc;"><strong>w10</strong></span></p>
+<p>11/14</p>
+<p>老師開了github classrooms 讓我們加入teams，同組 成員可以直接加入分組倉儲，我是第一組代號是ag1，<wbr/>還把原本的分組倉儲git remote 進來了2a-ag1的倉儲裡，也把這個遠端倉儲git clone到自己的usb裡，<wbr/>還編輯了w3報告的內容也更新了靜態網站上的分組倉儲名稱。</p>
+<p><span style="color: #33cccc;"><strong>w11</strong></span></p>
+<p>11/21</p>
+<p>學校校慶</p>
+<p><span style="color: #33cccc;"><strong>w12</strong></span></p>
+<p>11/28</p>
+<p>編輯網頁</p>
+<p><span style="color: #33cccc;"><strong>w13</strong></span></p>
+<p>12/5</p>
+<p>研究了webots的使用方法，<wbr/>但因為隊友的零件還沒有轉stl檔，<wbr/>所以沒辦法倒進去webots 裡使用，還合併了我個人的分支進主分支裡，<wbr/>也把主分支的東西拉進自己分支。還建立了新倉儲的團隊靜態網站，<wbr/>以及自己的個人倉儲和個人靜態網站。</p>
+<div class="yj6qo"></div>
+<div class="adL"></div>
+</div>
+<div class="adL"></div>
+</div>
+<div class="adL"></div>
+</div>
+</div>
+</div>
+<div class="WhmR8e" data-hash="0" id="avWBGd-25"></div>
+</div>
+</div>
+<p></p>
+<h2>許智怡</h2>
+<h2>徐韻涵</h2>
+<h2>蘇郁涵</h2>
+<h2>朱宥靜</h2>
+<h2>徐睿駿</h2>
