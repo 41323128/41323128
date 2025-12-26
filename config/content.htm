@@ -1,18 +1,16 @@
 <h1>About</h1>
-<p></p>
-<p><span style="color: #000080;"><span>【課程名稱: 電腦輔助設計與實習】</span></span></p>
+<p><span style="color: #0000ff;">【課程名稱: 電腦輔助設計與實習】</span></p>
 <p>四設計二甲第四組  2a_ag1</p>
 <p><span color="#000080" style="color: #000000;">團隊倉儲: <a href="https://github.com/mdecad2025/2a-ag1">https://github.com/mdecad2025/2a-ag1</a></span></p>
 <p><span color="#000080" style="color: #000000;">團隊網站: <a href="https://mdecad2025.github.io/2a-ag1/content/index.html">https://mdecad2025.github.io/2a-ag1/content/index.html</a></span></p>
-<p><span color="#000080" style="color: #000000;">課程成果:</span></p>
-<p><span style="color: #000080;"></span></p>
+<p><span color="#000080" style="color: #000000;">課程成果: </span></p>
+<p><span color="#000080" style="color: #000000;">123</span></p>
 <p>成員:黃英綺(組長)41323104、徐睿駿41323128、朱宥靜、徐韻涵41323102、許智怡 41323103、蘇郁涵41323105</p>
 <p>工作分配:</p>
 <p style="padding-left: 60px;"><span>繪製Openduck mini 的零件設計圖、紀錄工作內容在網站裡:朱宥靜、徐韻涵、蘇郁涵</span></p>
 <p style="padding-left: 60px;"><span>設計和繪製 5-bar Linkage:黃英綺、徐睿駿、許智怡</span></p>
 <p style="padding-left: 60px;"><span>寫程式和模擬:徐睿駿</span></p>
 <p style="padding-left: 60px;"><span>網站設計:黃英綺</span></p>
-<p></p>
 <p>課程評分:</p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff00;">學習心得報告 (60%)</span> - MS Teams 線上參與，6人一組每三週發表學習心得。</p>
 <p style="padding-left: 60px;">w3、w7、w10、w14、w17、w18</p>
@@ -76,7 +74,7 @@
 <p><span>二、最小化優化目標 (Objective)<br/><br/><span>設計應追求連桿總尺寸的最小化。優化目標 J 定義為：</span><br/><span>最小化 J=1.0⋅L1+1.0⋅L2+0.5⋅distance</span><br/><br/><span>（此權重分配旨在優先最小化連桿長度 L1 和 L2，同時適度控制機構的底部高度 distance。）</span></span></p>
 <p><span><span>三、運動學與工程約束 (Constraints)<br/><br/><span>設計結果必須嚴格滿足以下三個工程約束，以確保筆尖 C 點在整個繪圖區域內不會遇到死點或不可達的情況。</span><br/><br/><span>1. 可達性與外側奇異點迴避 (L1+L2 約束)</span><br/><br/><span>連桿 L1 與 L2 的長度總和必須大於機構在繪圖區域最遠點（即 X=Length,Y=distance+Length）處所需的最大距離 Dmax。</span><br/><br/><span>這項約束保證了筆尖在最遠處不會發生連桿 L1 和 L2 完全伸直共線（外側奇異點，即 A,B,C 共線）導致的鎖死。</span><br/><br/><span>2. 繪圖區域穩定性 (內側奇異點迴避)</span><br/><br/><span>連桿 L2 的兩倍長度 (2⋅L2) 必須大於筆尖 C 點在整個 Length cm×Length cm 繪圖區域內時，點 B 到點 D 之間的最大距離 Max(DBD)Area。</span><br/><br/><span>更重要的是，為了考慮實際製造公差和控制誤差，必須強制加入 1.0 cm 的安全裕度 (Δ)：</span><br/><span>2⋅L2&gt;Max(DBD)Area+1.0 cm</span><br/><br/><span>這項約束保證了筆尖在任何位置都不會發生連桿 L2 和 L3 完全伸直共線（內側奇異點，即 B,C,D 共線）導致的控制失效。</span><br/><br/><span>3. 轉軸方向約束 (Y 座標約束)</span><br/><br/><span>在求解逆運動學時，連桿 L1 和 L4 的擺動點 B 點和 D 點的垂直坐標 (YB 和 YD) 必須始終大於或等於零。</span><br/><br/><span>這確保了機構在整個工作過程中始終處於轉軸上方（上搖桿解）的穩定配置，防止機構翻轉至下方區域。</span></span></span></p>
 <p>最小尺寸設計如下<span>:</span></p>
-<p><span><span><span>【基因演算法最終最小化尺寸設計結果】<br/> 找到**滿足約束且最小化尺寸**的設計（總尺寸 J ≈ 54.00 cm）:<br/> L1 (Link 1 &amp; 4) = 19.50cm<br/> L2 (Link 2 &amp; 3) = 25.50 cm<br/> Distance (Y-bottom) = 18 cm<br/> <br/> --- 最終設計驗證 ---<br/><span>1. 最遠點奇異點約束 (L1+L2 &gt; D_max): 45 &gt; 42.94(滿足)</span><br/><span>2. 繪圖區域穩定性 (2*L2 &gt; Max(D_BD) + 1.0cm):</span><br/><span>   2*L2 = 51.00 cm</span><br/><span>   Max(D_BD) + 1.0 cm = 49.79+ 1.00 = 50.79 cm</span><br/><span>   **裕度滿足 (2*L2 僅略大於所需值，實現最小化)**</span><br/><span>3. Y 座標約束 (Y_B, Y_D &gt;= 0): 在逆運動學中已確保 (滿足)</span></span></span></span></p>
+<p><span><span><span>【基因演算法最終最小化尺寸設計結果】<br/> 找到**滿足約束且最小化尺寸**的設計（總尺寸 J ≈ 54.00 cm）:<br/> <strong><span style="color: #ff6600;">L1 (Link 1 &amp; 4) = 19.50cm</span></strong><br/><strong><span style="color: #ff6600;"> L2 (Link 2 &amp; 3) = 25.50 cm</span></strong><br/><strong><span style="color: #ff6600;"> Distance (Y-bottom) = 18 cm</span></strong><br/> <br/> --- 最終設計驗證 ---<br/><span>1. 最遠點奇異點約束 (L1+L2 &gt; D_max): 45 &gt; 42.94(滿足)</span><br/><span>2. 繪圖區域穩定性 (2*L2 &gt; Max(D_BD) + 1.0cm):</span><br/><span>   2*L2 = 51.00 cm</span><br/><span>   Max(D_BD) + 1.0 cm = 49.79+ 1.00 = 50.79 cm</span><br/><span>   **裕度滿足 (2*L2 僅略大於所需值，實現最小化)**</span><br/><span>3. Y 座標約束 (Y_B, Y_D &gt;= 0): 在逆運動學中已確保 (滿足)</span></span></span></span></p>
 <h2>CAD</h2>
 <p><strong>影片：</strong></p>
 <p><a href="https://youtu.be/1z76ZF6g1Lo">五連桿設計草稿繪製影片</a></p>
@@ -97,12 +95,10 @@
 <hr/>
 <p><strong><a href="/downloads/組合圖.png">組合圖</a></strong></p>
 <p><strong><img alt="" height="197" src="/images/組合圖.png" width="405"/></strong></p>
-<p><a href="/downloads/組合圖3.zip">完整檔案</a></p><h2>QA1</h2>
+<p><a href="/downloads/組合圖3.zip">完整檔案</a></p>
+<h2>QA1</h2>
 <p><span style="background-color: #f09c9c;">問題</span>：第一次嘗試新的繪圖軟體，很多功能不會用，一開始在畫的時候花很多時間在研究功能。</p>
 <p><span style="background-color: #8ee88f;">解決</span>：我仔細研究老師給的說明，還上網找教學的文章、影片，最後越用越熟練，遇到的問題和挫折也變少了。</p>
-<p></p>
-<h2>Idea</h2>
-<p></p>
 <h1>Robot</h1>
 <h2>CAD diary</h2>
 <h3>41323102徐韻涵</h3>
@@ -130,7 +126,8 @@
 <p><span>在進行3D繪製(OpenDuck workspace之肚子和頭的部分)</span></p>
 <p><span><img alt="" height="151" src="/images/螢幕擷取畫面 2025-12-12 150944.png" width="205"/></span><img alt="" height="130" src="/images/螢幕擷取畫面 2025-12-12 145902.png" width="219"/><span></span></p>
 <p>學習webotes</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MhpFUneLzK4?si=K10rLTnJtSnJlnp4" title="YouTube video player" width="560"></iframe></p><h3>zyj</h3>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MhpFUneLzK4?si=K10rLTnJtSnJlnp4" title="YouTube video player" width="560"></iframe></p>
+<h3>zyj</h3>
 <h4>OpenDuck</h4>
 <p><img alt="" height="239" src="/images/螢幕擷取畫面 2025-11-28 143327.png" width="152"/></p>
 <p><a href="https://cad.onshape.com/documents/4eb10ed3dcc2b06ab27d6be8/w/ba0d82dd70a784e0296bcd8e/e/3ae72db217af66b4095c0c40">機器人連結</a></p>
@@ -142,9 +139,8 @@
 <p></p>
 <h2>QA2</h2>
 <p>問題:第一次使用這個軟體不熟悉，需要花很多時間摸索。檔案的管理方式跟之前所學的有很大的差異。草圖約束、界面不夠直覺約束圖示多，畫面容易混亂。</p>
-<p>解決:透過教學影片與實際操作練習熟悉 Onshape 的介面與檔案管理方式，減少第一次使用的不適應。作圖時即時加入草圖約束並整理線條，避免畫面混亂並提升建模效率。</p><h2>Idea2</h2>
+<p>解決:透過教學影片與實際操作練習熟悉 Onshape 的介面與檔案管理方式，減少第一次使用的不適應。作圖時即時加入草圖約束並整理線條，避免畫面混亂並提升建模效率。</p>
 <h1>Webot</h1>
-<h2>Diary</h2>
 <h2>QA3</h2>
 <h1>心得</h1>
 <h2>黃英綺</h2>
@@ -234,7 +230,7 @@
 <div class="yj6qo">學會webots的使用、編輯組別的名稱、確認老師要求的pass目標。</div>
 <div class="adL"></div>
 </div>
-<div class="adL"></div>
+<div class="adL"><span style="color: #33cccc;"><strong>w16</strong></span></div>
 </div>
 <div class="adL"></div>
 </div>
@@ -243,11 +239,13 @@
 <div class="WhmR8e" data-hash="0" id="avWBGd-25"></div>
 </div>
 </div>
-<p></p><h2>許智怡</h2>
+<p></p>
+<h2>許智怡</h2>
 <h2>徐韻涵</h2>
 <p>電腦輔助設計與實習這堂課，讓我學到了onshape這套線上繪圖軟體。跟之前學的真的差異很大，即便他們都是繪圖軟體，但整體的排版、和檔案的管理方式都不一樣，花了一段時間去摸索軟體的模式。</p>
 <p>第一次畫圖不是用inventor或是SOLIDWORKS這這比較常規的軟體，而是用onshap可以多人同時線上編輯的畫圖軟體。第一張圖片不是用 Inventor 或 SOLIDWORKS 畫的，而是用 Onshape。 Onshape可以讓我們機器人隊同時在線上編輯，同步看到彼此的修改，而且不用安裝軟體，隨時都在幫你存檔，不用怕軟體當機突然黑屏沒存到檔案，對整個團隊協作非常方便。</p>
-<p data-end="1048" data-start="943">  在這個模型裡，每位隊員都有分工，我負責的是把所有零件組裝成完整的機器人。在組裝的過程中，要調整零件方向、設定關節運動，還要處理配合面不對或機構干涉的問題。雖然有點複雜，但看到機器人逐步成形的時候真的很有成就感。</p><h2>蘇郁涵</h2>
+<p data-end="1048" data-start="943">  在這個模型裡，每位隊員都有分工，我負責的是把所有零件組裝成完整的機器人。在組裝的過程中，要調整零件方向、設定關節運動，還要處理配合面不對或機構干涉的問題。雖然有點複雜，但看到機器人逐步成形的時候真的很有成就感。</p>
+<h2>蘇郁涵</h2>
 <p><span>(41323105)心得:</span></p>
 <p><span>這是我首次利用onshape軟體進行繪製</span></p>
 <p><span>為什麼會選擇onshape呢 ?</span></p>
@@ -277,5 +275,5 @@
 <p>1.完全依賴網路<br/>需要穩定的網路連線；沒有正常離線模式。這對網路不穩定或常出差的使用者是大問題。</p>
 <p>2.專業功能不如傳統桌面 CAD 完整<br/>與 SolidWorks、Fusion 360 等軟體比起來，某些高級功能較不成熟或欠缺。</p>
 <p></p>
-<p>這是我第一次使用<span>Onshape這個軟體，跟之前使用的 SOLIDWORKS、Inventor 有些不同，需要重新摸索軟體一陣子，在摸索的過程中也發現了優缺點。</span>我們使用的方法是從副本建立零件工程圖，標註尺寸，雖然過程很麻煩，但這樣不僅可以詳細知道尺寸也可以看三視圖，方便之後的繪製，繪製完所有零件後，再一起進行組裝。</p><h2>徐睿駿</h2>
+<p>這是我第一次使用<span>Onshape這個軟體，跟之前使用的 SOLIDWORKS、Inventor 有些不同，需要重新摸索軟體一陣子，在摸索的過程中也發現了優缺點。</span>我們使用的方法是從副本建立零件工程圖，標註尺寸，雖然過程很麻煩，但這樣不僅可以詳細知道尺寸也可以看三視圖，方便之後的繪製，繪製完所有零件後，再一起進行組裝。</p>
 <h2>徐睿駿</h2>
